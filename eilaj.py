@@ -17,7 +17,7 @@ def main():
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
             continue
         counter += 1
-    print(result)
+    #print(result)
 
 
 
