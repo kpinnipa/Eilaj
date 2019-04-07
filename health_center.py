@@ -29,7 +29,7 @@ def health_center(questions, answers):
             answers.append("No")
             break
         elif user2.upper() == "C":
-            answers.append("Maybe")
+            answers.append("Mostly")
             break
     print("When was the last time you were here?")
     question3 = "When was the last time you were here?"
