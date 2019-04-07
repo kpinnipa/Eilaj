@@ -17,7 +17,6 @@ def main():
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
             continue
         counter += 1
-    print(result)
 
 
 
@@ -33,7 +32,3 @@ def print_list(list):
     for i in list:
         print(i)
 
-
-
-if __name__ == "__main__":
-    main()
