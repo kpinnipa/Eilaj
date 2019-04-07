@@ -8,6 +8,9 @@ def intro(questions, answers):
         answers.append('Bad')
     elif x.find('C') != -1 or x.find('c') != -1:
         answers.append('Okay')
+    elif x.upper() not in "ABC":
+        print("Please choose between A, B, and C.")
+        x = input('Type letter: ')
     questions.append('How was your trip?')
     print('Are you alone?\nA. Yes\nB. No')
     x = input('Type letter: ')
@@ -15,4 +18,7 @@ def intro(questions, answers):
         answers.append('Yes')
     elif x.find('B') != -1 or x.find('b') != -1:
         answers.append('No')
+    elif x.upper() not in "AB":
+        print("Please choose between A and B.")
+        x = input('Type letter: ')
     questions.append('Are you alone?')
