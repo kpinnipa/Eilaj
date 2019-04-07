@@ -8,10 +8,10 @@ def health_center():
         user = input("Please select A or B: ")
         if user != "A" and user != "B":
             continue
-        if user == "A":
+        elif user == "A":
             #answers.append("Yes")
             break
-        if user == "B":
+        elif user == "B":
             #answers.append("No")
             break
     print("Are you able to fall asleep at night?")
@@ -22,13 +22,13 @@ def health_center():
         user2 = input("Please select A, B, or C: ")
         if user2 not in "ABC":
             continue
-        if user2 == "A":
+        elif user2 == "A":
             # answers.append("Yes")
             break
-        if user2 == "B":
+        elif user2 == "B":
             # answers.append("No")
             break
-        if user2 == "C":
+        elif user2 == "C":
             # answers.append("Maybe")
             break
     print("When was the last time you were here?")
@@ -39,13 +39,13 @@ def health_center():
         user3 = input("Please choose A, B, or C: ")
         if user3 not in "ABC":
             continue
-        if user3 == "A":
+        elif user3 == "A":
             # answers.append("Never")
             break
-        if user3 == "B":
+        elif user3 == "B":
             # answers.append("Recently")
             break
-        if user3 == "C":
+        elif user3 == "C":
             # answers.append("A while ago")
             break
     print("Would you like to talk to anyone about anything?")
@@ -56,10 +56,10 @@ def health_center():
         user4 = input("Please choose A or B: ")
         if user4 != "A" and user4 != "B":
             continue
-        if user4 == "A":
+        elif user4 == "A":
             #answers.append("Yes")
             break
-        if user4 == "B":
+        elif user4 == "B":
             #answers.append("No")
             break
-health_center()
+
