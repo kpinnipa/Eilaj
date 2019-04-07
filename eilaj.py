@@ -1,5 +1,5 @@
 def main(questions, answers):
-    questions2 = ("Do you have other friends here?\n", "How often do you play here?\n")
+    questions2 = ("Do you have other friends here?", "How often do you play here?")
     answers2 = [("A. Yes", "B. No"), ("A. All the time", "B. Never", "C. Sometimes")]
     counter = 0
     while counter < len(questions2):
