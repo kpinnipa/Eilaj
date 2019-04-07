@@ -15,7 +15,6 @@ def main():
             result.append(answers[counter][index][3:])
         except IndexError:
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
-        #print(result)
         counter += 1
     print(result)
 
@@ -23,13 +22,9 @@ def main():
 
 
 def translate(answer):
-    #try:
         list = ["A", "B", "C", "D", "E", "F", "G"]
         index = list.index(answer)
         return index
-    #except IndexError:
-        #continue
-        #pass
 
 
 
