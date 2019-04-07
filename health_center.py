@@ -6,12 +6,12 @@ def health_center(questions, answers):
     print("A: Yes\nB: No")
     while True:
         user = input("Please select A or B: ")
-        if user != "A" and user != "B":
+        if user.upper() not in "AB":
             continue
-        elif user == "A":
+        elif user.upper() == "A":
             answers.append("Yes")
             break
-        elif user == "B":
+        elif user.upper() == "B":
             answers.append("No")
             break
     print("Are you able to fall asleep at night?")
@@ -20,15 +20,15 @@ def health_center(questions, answers):
     print("A: Yes\nB: No\nC: Mostly")
     while True:
         user2 = input("Please select A, B, or C: ")
-        if user2 not in "ABC":
+        if user2.upper() not in "ABC":
             continue
-        elif user2 == "A":
+        elif user2.upper() == "A":
             answers.append("Yes")
             break
-        elif user2 == "B":
+        elif user2.upper() == "B":
             answers.append("No")
             break
-        elif user2 == "C":
+        elif user2.upper() == "C":
             answers.append("Maybe")
             break
     print("When was the last time you were here?")
@@ -37,15 +37,15 @@ def health_center(questions, answers):
     print("A: Never\nB: Recently\nC: A while ago")
     while True:
         user3 = input("Please choose A, B, or C: ")
-        if user3 not in "ABC":
+        if user3.upper() not in "ABC":
             continue
-        elif user3 == "A":
+        elif user3.upper() == "A":
             answers.append("Never")
             break
-        elif user3 == "B":
+        elif user3.upper() == "B":
             answers.append("Recently")
             break
-        elif user3 == "C":
+        elif user3.upper() == "C":
             answers.append("A while ago")
             break
     print("Would you like to talk to anyone about anything?")
@@ -54,12 +54,12 @@ def health_center(questions, answers):
     print("A: Yes\nB: No")
     while True:
         user4 = input("Please choose A or B: ")
-        if user4 != "A" and user4 != "B":
+        if user4.upper() not in "AB":
             continue
-        elif user4 == "A":
+        elif user4.upper() == "A":
             answers.append("Yes")
             break
-        elif user4 == "B":
+        elif user4.upper() == "B":
             answers.append("No")
             break
 
