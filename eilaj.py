@@ -1,16 +1,17 @@
-def main():
-    questions = ("Do you have other friends here?\n", "How often do you play here?\n")
-    answers = [("A. Yes", "B. No"), ("A. All the time", "B. Never", "C. Sometimes")]
-    result = []
+def main(questions, answers):
+    questions2 = ("Do you have other friends here?\n", "How often do you play here?\n")
+    answers2 = [("A. Yes", "B. No"), ("A. All the time", "B. Never", "C. Sometimes")]
     counter = 0
-    while counter < len(questions):
-        print(questions[counter])
-        print_list(answers[counter])
+    while counter < len(questions2):
+        print(questions2[counter])
+        if questions2[counter] not in questions:
+            questions.append(questions2[counter])
+        print_list(answers2[counter])
         answer = input()
         try:
             index = translate(answer)
-            result.append(answers[counter][index][3:])
-        except IndexError:
+            answers.append(answers2[counter][index][3:])
+        except IndexError or ValueError:
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
             continue
         counter += 1
