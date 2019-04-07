@@ -41,3 +41,14 @@ while 1==1:
         print('Incorrect response')
 print(questions)
 print(answers)
+
+#Write into file
+with open('therapy.txt', 'w') as f:
+    n = 1
+    m = 1
+    for question in questions:
+        f.write(str(n)+")"+question+"\n")
+        n+=1
+    for answer in answers:
+        f.write(str(m)+")"+answer+"\n")
+        m+=1
