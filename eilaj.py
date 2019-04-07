@@ -15,6 +15,7 @@ def main():
             result.append(answers[counter][index][3:])
         except IndexError:
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
+            continue
         counter += 1
     print(result)
 
