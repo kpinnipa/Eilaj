@@ -12,7 +12,7 @@ def food_center(questions, answers):
         try:
             index = translate(answer)
             answers.append(answers2[counter][index][3:])
-        except IndexError:
+        except IndexError or ValueError:
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
             continue
         counter += 1
