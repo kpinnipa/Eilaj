@@ -1,6 +1,3 @@
-# Playground conversation
-
-
 def main():
     questions = ("Do you have other friends here?\n", "How often do you play here?\n")
     answers = [("A. Yes", "B. No"), ("A. All the time", "B. Never", "C. Sometimes")]
@@ -17,14 +14,13 @@ def main():
             print("I'm sorry but can you say that again? I didn't quite get what you were saying.")
             continue
         counter += 1
-    #print(result)
 
 
 
 
 def translate(answer):
         list = ["A", "B", "C", "D", "E", "F", "G"]
-        index = list.index(answer)
+        index = list.index(answer.upper())
         return index
 
 
@@ -32,4 +28,3 @@ def translate(answer):
 def print_list(list):
     for i in list:
         print(i)
-
