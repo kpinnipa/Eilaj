@@ -5,7 +5,8 @@ def food_center(questions, answers):
     counter = 0
     while counter < len(questions2):
         print(questions2[counter])
-        questions.append(questions2[counter])
+        if questions2[counter] not in questions:
+            questions.append(questions2[counter])
         print_list(answers2[counter])
         answer = input()
         try:
