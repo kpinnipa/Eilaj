@@ -1,5 +1,5 @@
 def food_center(questions, answers):
-    questions2 = ("Are you often hungry?\n", "Do you have a good appetite?\n")
+    questions2 = ("Are you often hungry?", "Do you have a good appetite?")
     answers2 = [("A. Yes", "B. No", "C. Maybe"), ("A. Yes", "B. No", "C. Mainly")]
     #result = []
     counter = 0
