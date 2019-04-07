@@ -24,7 +24,7 @@ while t < 3:
         foodCenter += 1
         t+=1
     elif x.find('a') == -1 and x.find('b') == -1 and x.find('c') == -1:
-        print('Please type a, b, or c)
+        print('Please type a, b, or c')
     else:
         print('You have already gone there.')
 while 1==1:
