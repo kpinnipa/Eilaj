@@ -49,6 +49,7 @@ with open('therapy.txt', 'w') as f:
     for question in questions:
         f.write(str(n)+")"+question+"\n")
         n+=1
+    f.write("\n")
     for answer in answers:
         f.write(str(m)+")"+answer+"\n")
         m+=1
